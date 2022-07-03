@@ -1,5 +1,6 @@
 name: Package Build and Release
 on:
+  repository_dispatch:
   push:
     tags:
       - '*'
