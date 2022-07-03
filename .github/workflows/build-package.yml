@@ -8,6 +8,7 @@ on:
 
 env:
   PACKAGE_NAME: luci-app-v2ray
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
   CACHE_DIR: ~/cache
 
 jobs:
