@@ -2,9 +2,6 @@ name: Package Build and Release
 on:
   repository_dispatch:
   workflow_dispatch:
-  push:
-    tags:
-      - '*'
 
 env:
   PACKAGE_NAME: luci-app-v2ray
