@@ -187,8 +187,9 @@ jobs:
       uses: ncipollo/release-action@main
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        tag: ${{ needs.tag_version.outputs.tag }}
-        files: '*.ipk'
+        tag:  v2ray_official_${{ env.PACKAGED_OUTPUTDATE }}
+        artifacts: ${{ env.PACKAGED_OUTPUTPATH }}/*
+        allowUpdates: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
