@@ -1,4 +1,4 @@
-name: Package Build and Release
+name: Package Build and Release manually
 on:
   repository_dispatch:
   workflow_dispatch:
